@@ -7,3 +7,8 @@
 sneaker = {:color => "red", :price => 299.89, :material => "ostridge feathers"}
 
 p sneaker
+
+coat = {:color => "gold", :price => 301.89, :material => "lion's mane"}
+
+p coat
+
