@@ -5,17 +5,15 @@
 # C.3 - Be sure to use symbols for the keys. Try creating hashes using both types of hash symbol syntaxes. (Ruby syntax {:a => 123} vs. “JavaScript” syntax {a: 123}).
 
 sneaker = {:color => "red", :price => 299.89, :material => "ostridge feathers"}
+coat = {:color => "gold", :price => 301.89, :material => "lion's mane"}
+sweater = {:color => "grey", :price => 15, :material => "shedded dog fur"}
 
 p "#{sneaker[:color]} #{sneaker[:price]} #{sneaker[:material]}"
 
-
-coat = {:color => "gold", :price => 301.89, :material => "lion's mane"}
-
-
-sweater = {:color => "grey", :price => 15, :material => "shedded dog fur"}
+p "#{coat[:color]} #{sneaker[:price]} #{coat[:material]}
 
 
-p sneaker = #{color: "red"} #{price: 299.89}, {:material "ostridge feathers"}
+
 
 
 
