@@ -6,14 +6,16 @@
 
 sneaker = {:color => "red", :price => 299.89, :material => "ostridge feathers"}
 
-p sneaker
+p "#{sneaker[:color]} #{sneaker[:price]} #{sneaker[:material]}"
+
 
 coat = {:color => "gold", :price => 301.89, :material => "lion's mane"}
 
-p coat
 
 sweater = {:color => "grey", :price => 15, :material => "shedded dog fur"}
 
-p sweater 
+
+p sneaker = #{color: "red"} #{price: 299.89}, {:material "ostridge feathers"}
+
 
 
