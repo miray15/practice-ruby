@@ -12,3 +12,8 @@ coat = {:color => "gold", :price => 301.89, :material => "lion's mane"}
 
 p coat
 
+sweater = {:color => "grey", :price => 15, :material => "shedded dog fur"}
+
+p sweater 
+
+
