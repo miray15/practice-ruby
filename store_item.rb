@@ -1,4 +1,13 @@
 
+# p "#{employee1['first_name']} #{employee1['last_name']} makes $#{employee1['salary']} per year."
+# p employee1['first_name']
+
+# employee2 = {:first_name => "Danilo", :last_name => "Campos", :active => false, :salary => 90_000}
+# p "#{employee2[:first_name]} #{employee2[:last_name]} makes $#{employee2[:salary]} per year."
+
+# employee2_fancy = {first_name: "Danilo", last_name: "Campos", active: false, salary: 90_000}
+# p "#{employee2_fancy[:first_name]} #{employee2_fancy[:last_name]} makes $#{employee2_fancy[:salary]} per year."
+
 # C. Use hashes with symbols to represent the following scenario:
 # C.1 - You are the owner of a store that sells items (you decide what specifically). Each item has various properties such as color, price, etc.
 # C.2 - Represent 3 items using hashes. Each hash should have the same keys with different values.
@@ -71,25 +80,87 @@
 # Class : Class - Ruby 2.5.2
 
 
-My code 
+# My code 
 
-class = Items 
+Replace your “reader” and “writer” methods using the attr_reader and attr_writer shortcuts!
+Rewrite your store items using a class with a single options hash in the initialize method.
 
-  def initialize (input_color, input_price, input_material)
-    @color = input_color 
-    @price = input_price 
-    @material = input_material
+
+class Items 
+
+  attr_reader :color, :price :material
+  attr_writer :color
+
+
+  def initialize (input_options)
+    @color = input_options [:color]
+    @price = input_options [:price] 
+    @material = input_options [:material]
   end 
 
   def print_info 
-    p "#{color} is the item's color, #{"
-
+    p "#{color} is the item's color, the intem costs #{[price]}, and it's made of #{material}."
+  end 
 
 end 
-  item1 = Items.new ("red", 299.89, "ostridge feathers")
+  item1 = Items.new {
+    
+    :item => "red", 
+    :price => 299.89,
+    :material => "ostridge feathers"
+  }
+  
+  
+  item1.print_info
   item2 = Items.new ("gold", 301.89, "lion's mane")
   item3 = Items.new ("grey", 15, "shedded dog fur")
 
+
+
+
+
+______________________
+
+# class Employee
+#   attr_reader :first_name, :salary, :active, :last_name
+#   attr_writer :first_name
+
+#   def initialize(input_options)
+#     @first_name = input_options[:first_name]
+#     @last_name = input_options[:last_name]
+#     @active = input_options[:active]
+#     @salary = input_options[:salary]
+#   end
+
+#   def print_info
+#     p "#{first_name} #{@last_name} makes $#{@salary} per year."
+#   end
+
+#   def give_annual_raise
+#     @salary *= 1.05
+#   end
+# end
+
+# employee1 = Employee.new(
+#   {
+#     :last_name => "Carter", 
+#     :active => true, 
+#     :first_name => "Majora", 
+#     :salary => 80000
+#   }
+# )
+# employee1.print_info
+
+# p employee1.salary
+# # employee1.print_info
+
+
+# employee2 = Employee.new({first_name: "Danilo", last_name: "Campos", active: false, salary: 90000})
+# employee2.print_info
+
+
+ 
+  
  
 # sneaker = {:color => "red", :price => 299.89, :material => "ostridge feathers"}
 # coat = {:color => "gold", :price => 301.89, :material => "lion's mane"}
