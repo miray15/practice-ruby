@@ -70,22 +70,27 @@
 # Class: Class (Ruby 2.5.2)
 # Class : Class - Ruby 2.5.2
 
-# class = Items 
 
-def initialize (input_color, input_price, input_material)
-  @color = input_color 
-  @price = input_price 
-  @material = input_material
+My code 
+
+class = Items 
+
+  def initialize (input_color, input_price, input_material)
+    @color = input_color 
+    @price = input_price 
+    @material = input_material
+  end 
+
+  def print_info 
+    p "#{color} is the item's color, #{"
+
 
 end 
+  item1 = Items.new ("red", 299.89, "ostridge feathers")
+  item2 = Items.new ("gold", 301.89, "lion's mane")
+  item3 = Items.new ("grey", 15, "shedded dog fur")
 
-
-
-def 
-  item1 = Item.new ("red", 299.89, "ostridge feathers")
-
-
-
+ 
 # sneaker = {:color => "red", :price => 299.89, :material => "ostridge feathers"}
 # coat = {:color => "gold", :price => 301.89, :material => "lion's mane"}
 # sweater = {:color => "grey", :price => 15, :material => "shedded dog fur"}
@@ -95,3 +100,8 @@ def
 # p "The coat color is #{coat[:color]}, the price is $#{coat[:price]}, and the material is the ever exotic #{coat[:material]}."
 
 # p "The color of the sweater is #{coat[:color]}, its cost is $#{sweater[:price]}, and the material is recycled and #{sweater[:material]}"
+
+
+#DEMO 
+
+#go to the repositories in Brian's github and look for the code we're currently working on. 
